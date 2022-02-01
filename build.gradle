@@ -32,6 +32,11 @@ java {
 }
 
 dependencies {
+    // Hibernate Validation
+    api "org.hibernate.validator:hibernate-validator:${project.property('hibernate-validator.version')}"
+    api "javax.el:javax.el-api:${project.property('javax-el-api.version')}"
+    api "org.glassfish.web:javax.el:${project.property('javax-el.version')}"
+
     // Lombok
     compileOnly "org.projectlombok:lombok:${project.property('lombok.version')}"
     annotationProcessor "org.projectlombok:lombok:${project.property('lombok.version')}"
